@@ -1,0 +1,50 @@
+break dwn{
+	5steps to hangman (pushed to sunday midnight)
+		pick a word
+			list of words
+			pick one at random
+				get length of list
+				pick a # < then length
+				use # as index
+				 (//^ could write all this as one function)
+			store it somewhere
+				in a VAR
+		check user input
+			onkeyup
+				everything has to happen on based on this
+			check key and store it as lowercase
+			check to see it can be used
+				if yes
+					check guess valid letters 
+						if no
+							nothing
+						if yes
+							add to list
+				if no
+					nothing
+			make an array of letters(a-z)
+				if indexOf letter in arrray ! == -1
+				send letter to function lowercase
+		see if its part of the word
+			all ['a';'i']
+				not ['a','i']
+				google:js delete array duplicates
+					var unique=arr.filter (function()){
+					return (self.indexOf(item)===-1)
+					}
+				if indexOf x in arr === -1
+					true
+						incorrect guess
+					else
+						correct guess
+		give feedback
+			arr of correct guesses
+				push to ^
+			var = " " loop length of word
+				check charAt @ incremental of word === x (//<index of correct)
+					true
+						var = var + x
+					false
+						var = var +"_"
+		check for win/loses
+}
