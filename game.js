@@ -14,6 +14,7 @@ var updateGuessesLeft = function() {
   
   document.querySelector('#guessLeft').innerHTML = "Guesses left: " + guessesLeft;
 };
+console.log()
 
 var updatetoGuess = function() {
   this.toGuess = this.keyBoard[Math.floor(Math.random() * this.keyBoard.length)];
@@ -22,6 +23,7 @@ var updateGuessesSoFar = function() {
   
   document.querySelector('#let').innerHTML = "Your Guesses so far: " + guessed.join(', ');
 };
+console.log()
 
 var reset = function() {
   totalGuesses = 9;
@@ -31,8 +33,10 @@ var reset = function() {
   updateGuessesLeft();
   updateGuessesSoFar();
 }
+console.log()
 
 updateGuessesLeft();
+console.log()
 
 document.onkeyup = function(event) {
     guessesLeft--;
@@ -57,3 +61,4 @@ document.onkeyup = function(event) {
             reset();
         }
 };  
+console.log()
